@@ -1,18 +1,3 @@
-require 'coveralls'
-Coveralls.wear!
-
-# Run Coverage report
-require 'simplecov'
-SimpleCov.start do
-  add_filter 'spec/dummy'
-  add_group 'Controllers', 'app/controllers'
-  add_group 'Helpers', 'app/helpers'
-  add_group 'Mailers', 'app/mailers'
-  add_group 'Models', 'app/models'
-  add_group 'Views', 'app/views'
-  add_group 'Libraries', 'lib'
-end
-
 # Configure Rails Environment
 ENV['RAILS_ENV'] = 'test'
 
@@ -32,7 +17,6 @@ require 'spree/testing_support/preferences'
 require 'spree/testing_support/controller_requests'
 require 'spree/testing_support/authorization_helpers'
 require 'spree/testing_support/url_helpers'
-require 'spree/testing_support/capybara_ext'
 
 # Requires factories defined in lib/spree_hstore/factories.rb
 require 'spree_hstore/factories'

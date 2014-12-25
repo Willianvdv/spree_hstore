@@ -4,7 +4,7 @@ Filtering on attributes in Spree is hard, especially if you want to filter on mu
 or's/and's. That's why we store our product properties in a hstore field on the product. This makes
 quering super easy.
 
-Checkout these examples:
+## Examples
 
 Filter on products where property `foo` is `bar`
 ```
